@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+header {
+    margin-top: 50px;
+}
+body {
+    background-color: rgb(53, 53, 207);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header form {
+    background-color: white;
+    padding: 7px;
+    margin-top: 20px;
+}
+
+form input {
+    border: none;
+    outline: none;
+}
+
+form button {
+    padding: 5px;
+    background-color: #2147b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: white;
+    color: #114855;
+}
+
+.todo-container {
+    margin-top: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+}
+
+.todo {
+    background: white;
+    width: 210px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+
+.check-btn .trash-btn {
+    pointer-events: none;
+}
+
+.check-btn .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
